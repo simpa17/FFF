@@ -46,12 +46,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvProduct = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel10.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             this.panelTotalSpending.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
+            this.guna2Panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -260,11 +262,10 @@
             this.dgvProduct.Name = "dgvProduct";
             this.dgvProduct.ReadOnly = true;
             this.dgvProduct.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dgvProduct.RowHeadersVisible = false;
             this.dgvProduct.RowHeadersWidth = 51;
             this.dgvProduct.RowTemplate.Height = 24;
             this.dgvProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProduct.Size = new System.Drawing.Size(817, 511);
+            this.dgvProduct.Size = new System.Drawing.Size(697, 361);
             this.dgvProduct.TabIndex = 10;
             this.dgvProduct.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Orange;
             this.dgvProduct.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(225)))), ((int)(((byte)(184)))));
@@ -288,6 +289,17 @@
             this.dgvProduct.ThemeStyle.RowsStyle.Height = 24;
             this.dgvProduct.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(189)))), ((int)(((byte)(97)))));
             this.dgvProduct.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellContentClick);
+            // 
+            // guna2Panel4
+            // 
+            this.guna2Panel4.Controls.Add(this.dgvProduct);
+            this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel4.Location = new System.Drawing.Point(60, 76);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
+            this.guna2Panel4.Size = new System.Drawing.Size(697, 361);
+            this.guna2Panel4.TabIndex = 15;
             // 
             // frmProduct
             // 
@@ -295,13 +307,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(817, 511);
+            this.Controls.Add(this.guna2Panel4);
             this.Controls.Add(this.guna2Panel6);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Panel5);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel7);
             this.Controls.Add(this.guna2Panel3);
-            this.Controls.Add(this.dgvProduct);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmProduct";
             this.Text = "Product";
@@ -313,6 +325,7 @@
             this.panelTotalSpending.ResumeLayout(false);
             this.panelTotalSpending.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
+            this.guna2Panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -334,5 +347,6 @@
         private Guna.UI2.WinForms.Guna2Button btnModify;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
     }
 }
