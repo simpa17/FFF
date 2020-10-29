@@ -21,7 +21,7 @@ namespace FastFood.forms
         void loadData()
         {
             command = connection.CreateCommand();
-            command.CommandText = "select * from khachHang";
+            command.CommandText = "select * from sanPham";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
