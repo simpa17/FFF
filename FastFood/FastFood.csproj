@@ -185,11 +185,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\frmCustomer.cs">
+    <Compile Include="forms\Customer\frmCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\frmCustomer.Designer.cs">
+    <Compile Include="forms\Customer\frmCustomer.Designer.cs">
       <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Customer\frmModifyDataCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Customer\frmModifyDataCustomer.Designer.cs">
+      <DependentUpon>frmModifyDataCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\frmDashboard.cs">
       <SubType>Form</SubType>
@@ -203,10 +209,10 @@
     <Compile Include="forms\frmOrders.Designer.cs">
       <DependentUpon>frmOrders.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\frmProduct.cs">
+    <Compile Include="forms\Product\frmProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\frmProduct.Designer.cs">
+    <Compile Include="forms\Product\frmProduct.Designer.cs">
       <DependentUpon>frmProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\frmSetting.cs">
@@ -226,6 +232,18 @@
     </Compile>
     <Compile Include="forms\frmTransaction.Designer.cs">
       <DependentUpon>frmTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Product\frmProductAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Product\frmProductAdd.Designer.cs">
+      <DependentUpon>frmProductAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Product\frmProductModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Product\frmProductModify.Designer.cs">
+      <DependentUpon>frmProductModify.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogOut.cs">
       <SubType>Form</SubType>
@@ -252,12 +270,30 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyFastFoodDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyFastFoodDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyFastFoodDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyFastFoodDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyFastFoodDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyFastFoodDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyFastFoodDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Revenue.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\frmCustomer.resx">
+    <EmbeddedResource Include="forms\Customer\frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Customer\frmModifyDataCustomer.resx">
+      <DependentUpon>frmModifyDataCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
@@ -265,7 +301,7 @@
     <EmbeddedResource Include="forms\frmOrders.resx">
       <DependentUpon>frmOrders.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\frmProduct.resx">
+    <EmbeddedResource Include="forms\Product\frmProduct.resx">
       <DependentUpon>frmProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\frmSetting.resx">
@@ -276,6 +312,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\frmTransaction.resx">
       <DependentUpon>frmTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Product\frmProductAdd.resx">
+      <DependentUpon>frmProductAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogOut.resx">
       <DependentUpon>frmLogOut.cs</DependentUpon>
@@ -322,6 +361,39 @@
     </None>
     <None Include="QuanLyFastFoodDataSet.xss">
       <DependentUpon>QuanLyFastFoodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyFastFoodDataSet1.xsc">
+      <DependentUpon>QuanLyFastFoodDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyFastFoodDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyFastFoodDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyFastFoodDataSet1.xss">
+      <DependentUpon>QuanLyFastFoodDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyFastFoodDataSet2.xsc">
+      <DependentUpon>QuanLyFastFoodDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyFastFoodDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyFastFoodDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyFastFoodDataSet2.xss">
+      <DependentUpon>QuanLyFastFoodDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyFastFoodDataSet3.xsc">
+      <DependentUpon>QuanLyFastFoodDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyFastFoodDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyFastFoodDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyFastFoodDataSet3.xss">
+      <DependentUpon>QuanLyFastFoodDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Resources\fastfood.png" />
   </ItemGroup>

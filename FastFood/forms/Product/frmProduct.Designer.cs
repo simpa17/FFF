@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -47,6 +48,15 @@
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvProduct = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.quanLyFastFoodDataSet2 = new FastFood.QuanLyFastFoodDataSet2();
+            this.sanPhamBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sanPhamTableAdapter = new FastFood.QuanLyFastFoodDataSet2TableAdapters.sanPhamTableAdapter();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trangThaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.danhMucDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thanhPhanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel10.SuspendLayout();
@@ -54,6 +64,8 @@
             this.panelTotalSpending.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.guna2Panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyFastFoodDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sanPhamBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -180,6 +192,7 @@
             this.btnAdd.Size = new System.Drawing.Size(117, 45);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "Add";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // panelTotalSpending
             // 
@@ -233,6 +246,7 @@
             this.dgvProduct.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(225)))), ((int)(((byte)(184)))));
             this.dgvProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvProduct.AutoGenerateColumns = false;
             this.dgvProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProduct.BackgroundColor = System.Drawing.Color.White;
             this.dgvProduct.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -247,6 +261,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvProduct.ColumnHeadersHeight = 50;
+            this.dgvProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.tenDataGridViewTextBoxColumn,
+            this.trangThaiDataGridViewTextBoxColumn,
+            this.giaDataGridViewTextBoxColumn,
+            this.danhMucDataGridViewTextBoxColumn,
+            this.thanhPhanDataGridViewTextBoxColumn});
+            this.dgvProduct.DataSource = this.sanPhamBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(235)))), ((int)(((byte)(207)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -262,6 +284,7 @@
             this.dgvProduct.Name = "dgvProduct";
             this.dgvProduct.ReadOnly = true;
             this.dgvProduct.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dgvProduct.RowHeadersVisible = false;
             this.dgvProduct.RowHeadersWidth = 51;
             this.dgvProduct.RowTemplate.Height = 24;
             this.dgvProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -301,6 +324,68 @@
             this.guna2Panel4.Size = new System.Drawing.Size(697, 361);
             this.guna2Panel4.TabIndex = 15;
             // 
+            // quanLyFastFoodDataSet2
+            // 
+            this.quanLyFastFoodDataSet2.DataSetName = "QuanLyFastFoodDataSet2";
+            this.quanLyFastFoodDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sanPhamBindingSource
+            // 
+            this.sanPhamBindingSource.DataMember = "sanPham";
+            this.sanPhamBindingSource.DataSource = this.quanLyFastFoodDataSet2;
+            // 
+            // sanPhamTableAdapter
+            // 
+            this.sanPhamTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tenDataGridViewTextBoxColumn
+            // 
+            this.tenDataGridViewTextBoxColumn.DataPropertyName = "Ten";
+            this.tenDataGridViewTextBoxColumn.HeaderText = "Ten";
+            this.tenDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tenDataGridViewTextBoxColumn.Name = "tenDataGridViewTextBoxColumn";
+            this.tenDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // trangThaiDataGridViewTextBoxColumn
+            // 
+            this.trangThaiDataGridViewTextBoxColumn.DataPropertyName = "TrangThai";
+            this.trangThaiDataGridViewTextBoxColumn.HeaderText = "TrangThai";
+            this.trangThaiDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.trangThaiDataGridViewTextBoxColumn.Name = "trangThaiDataGridViewTextBoxColumn";
+            this.trangThaiDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // giaDataGridViewTextBoxColumn
+            // 
+            this.giaDataGridViewTextBoxColumn.DataPropertyName = "Gia";
+            this.giaDataGridViewTextBoxColumn.HeaderText = "Gia";
+            this.giaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.giaDataGridViewTextBoxColumn.Name = "giaDataGridViewTextBoxColumn";
+            this.giaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // danhMucDataGridViewTextBoxColumn
+            // 
+            this.danhMucDataGridViewTextBoxColumn.DataPropertyName = "DanhMuc";
+            this.danhMucDataGridViewTextBoxColumn.HeaderText = "DanhMuc";
+            this.danhMucDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.danhMucDataGridViewTextBoxColumn.Name = "danhMucDataGridViewTextBoxColumn";
+            this.danhMucDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // thanhPhanDataGridViewTextBoxColumn
+            // 
+            this.thanhPhanDataGridViewTextBoxColumn.DataPropertyName = "ThanhPhan";
+            this.thanhPhanDataGridViewTextBoxColumn.HeaderText = "ThanhPhan";
+            this.thanhPhanDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.thanhPhanDataGridViewTextBoxColumn.Name = "thanhPhanDataGridViewTextBoxColumn";
+            this.thanhPhanDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // frmProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -326,6 +411,8 @@
             this.panelTotalSpending.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
             this.guna2Panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyFastFoodDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sanPhamBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -348,5 +435,14 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private QuanLyFastFoodDataSet2 quanLyFastFoodDataSet2;
+        private System.Windows.Forms.BindingSource sanPhamBindingSource;
+        private QuanLyFastFoodDataSet2TableAdapters.sanPhamTableAdapter sanPhamTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn trangThaiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn giaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn danhMucDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn thanhPhanDataGridViewTextBoxColumn;
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using FastFood.forms.Product;
 
 namespace FastFood.forms
 {
@@ -42,6 +43,12 @@ namespace FastFood.forms
         private void dgvProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmProductAdd frm = new frmProductAdd();
+            frm.ShowDialog();
         }
     }
 }
