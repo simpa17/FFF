@@ -1,4 +1,5 @@
 ﻿using FastFood.forms;
+using FastFood.forms.formsChild;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace FastFood
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            Application.Run(new frmModifyStaff());
         }
     }
 }

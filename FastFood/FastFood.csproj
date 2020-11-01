@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -185,6 +185,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\formsChild\frmModifyStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\formsChild\frmModifyStaff.Designer.cs">
+      <DependentUpon>frmModifyStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\frmCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,14 +253,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuanLyFastFoodDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QuanLyFastFoodDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Revenue.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\formsChild\frmModifyStaff.resx">
+      <DependentUpon>frmModifyStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
@@ -312,17 +316,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="QuanLyFastFoodDataSet.xsc">
-      <DependentUpon>QuanLyFastFoodDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QuanLyFastFoodDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QuanLyFastFoodDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QuanLyFastFoodDataSet.xss">
-      <DependentUpon>QuanLyFastFoodDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Resources\fastfood.png" />
   </ItemGroup>
   <ItemGroup>

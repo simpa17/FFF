@@ -47,7 +47,6 @@
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.quanLyFastFoodDataSet = new FastFood.QuanLyFastFoodDataSet();
             this.quanLyFastFoodDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iconSearch = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
@@ -57,7 +56,6 @@
             this.guna2Panel9.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyFastFoodDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyFastFoodDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconSearch)).BeginInit();
             this.SuspendLayout();
@@ -309,12 +307,9 @@
             // 
             // quanLyFastFoodDataSet
             // 
-            this.quanLyFastFoodDataSet.DataSetName = "QuanLyFastFoodDataSet";
-            this.quanLyFastFoodDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // quanLyFastFoodDataSetBindingSource
             // 
-            this.quanLyFastFoodDataSetBindingSource.DataSource = this.quanLyFastFoodDataSet;
             this.quanLyFastFoodDataSetBindingSource.Position = 0;
             // 
             // iconSearch
@@ -355,7 +350,6 @@
             this.guna2Panel9.ResumeLayout(false);
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyFastFoodDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyFastFoodDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconSearch)).EndInit();
             this.ResumeLayout(false);
@@ -381,6 +375,5 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
         private System.Windows.Forms.BindingSource quanLyFastFoodDataSetBindingSource;
-        private QuanLyFastFoodDataSet quanLyFastFoodDataSet;
     }
 }

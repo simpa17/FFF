@@ -33,5 +33,15 @@ namespace FastFood.Properties {
                 return ((string)(this["QuanLyFastFoodConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESTINY\\LAN;Initial Catalog=QuanLyFastFood;Integrated Security=True")]
+        public string QuanLyFastFoodConnectionString1 {
+            get {
+                return ((string)(this["QuanLyFastFoodConnectionString1"]));
+            }
+        }
     }
 }
